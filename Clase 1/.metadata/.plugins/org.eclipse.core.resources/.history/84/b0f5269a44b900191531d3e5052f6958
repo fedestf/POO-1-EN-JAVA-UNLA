@@ -1,0 +1,28 @@
+package modelo;
+
+
+public class Numero {
+	
+	int n;
+
+	public Numero(int n) {
+		super();
+		this.n = n;
+	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+	
+	public int Sumar(Numero numero) {
+
+		return numero.getN() ;
+	}
+}
+
+
+

@@ -1,0 +1,14 @@
+package testeo;
+import modelo.Numero;
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Numero numero1=new Numero (2);
+		Numero numero2=new Numero (2);
+		System.out.println(numero2.getN()+" y "+numero1.getN());
+	
+	System.out.println(numero1.Sumar(numero2));
+	}
+
+}

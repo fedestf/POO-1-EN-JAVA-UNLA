@@ -1,0 +1,34 @@
+package modelo;
+
+
+public class Numero {
+	
+	private int n;
+
+	public Numero(int n) {
+		super();
+		this.n = n;
+	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+	
+	public int Sumar(Numero n) {
+		int n1=n.getN();
+		int n2=n.getN();
+		int resultado=n1+n2;
+		return resultado;
+	}
+
+	public int Multiplicar (Numero n) {
+		return (n.getN()*n.getN());
+	}
+}
+
+
+

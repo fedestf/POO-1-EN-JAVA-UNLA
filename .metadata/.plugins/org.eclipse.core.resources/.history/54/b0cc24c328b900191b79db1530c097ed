@@ -1,0 +1,23 @@
+package testeo;
+import modelo.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// creacion de paciente nuevo + prueba y concatenacion de los valores
+		Paciente paciente1 = new Paciente ("Federico","Lopez",1.78F,90F);
+		System.out.println(paciente1.getNombre() +" "+ paciente1.getApellido());
+		System.out.println(paciente1.traerNombreCompleto());
+		
+		//prueba del medico 
+		
+		Medico medico1 =new Medico ("Roberto","Lopez","Nutricionista");
+		System.out.println("visita 1");
+		System.out.println("el paciente "+paciente1.traerNombreCompleto());
+		System.out.println("atendido por :"+medico1.traerNombreMed());
+		System.out.println("con IMC: "+medico1.calcularIMC(paciente1));
+		
+	}
+
+}

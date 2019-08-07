@@ -1,0 +1,13 @@
+package testeo;
+import modelo.Paciente;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Paciente paciente1 = new Paciente ("Federico","Lopez"); 
+		System.out.println();
+	}
+
+}
