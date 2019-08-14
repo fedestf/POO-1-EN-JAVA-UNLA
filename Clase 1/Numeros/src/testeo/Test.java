@@ -10,20 +10,20 @@ public class Test {
 		System.out.println(numero2.getN()+" y "+numero1.getN());
 	//suma
 	
-	System.out.println("suma: " +numero1.Sumar(numero2));
+	System.out.println("suma: " +numero1.sumar(numero2));
 	
-	 System.out.println(numero1.Sumar2(numero1, numero2));
+	 System.out.println(numero1.sumar(numero1, numero2));
 	
 	//multiplicacion
-	System.out.println("multiplicacion: " +numero1.Multiplicar(numero2));
+	System.out.println("multiplicacion: " +numero1.multiplicar(numero2));
 	
 	// es par
 	
-	System.out.println("es par :"+numero1.EsPar(numero1));
-	System.out.println("Es par : "+numero2.EsPar(numero2));
+	System.out.println("es par :"+numero1.esPar());
+	System.out.println("Es par : "+numero2.esPar());
 	// es primo
-	System.out.println("Es primo :"+numero1.EsPrimo(numero1));
-	System.out.println("Es primo :"+numero2.EsPrimo(numero2));
+	System.out.println("Es primo :"+numero1.esPrimo());
+	System.out.println("Es primo :"+numero2.esPrimo());
 	// tostring
 	System.out.println("to string: "+numero1.ConvertirAString(numero1));
 	System.out.println("to string: "+numero1.ConvertirAString(numero2));
