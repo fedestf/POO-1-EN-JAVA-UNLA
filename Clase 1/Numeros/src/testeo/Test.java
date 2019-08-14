@@ -4,7 +4,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		// Creacion de numeros
-		Numero numero1=new Numero (3);
+		Numero numero1=new Numero (2);
 		Numero numero2=new Numero (2);
 		//flag de carga correcta
 		System.out.println(numero2.getN()+" y "+numero1.getN());
@@ -31,7 +31,7 @@ public class Test {
 	System.out.println("to double: "+numero1.ConvertirADouble(numero1));
 	System.out.println("to double: "+numero2.ConvertirADouble(numero2));
 	//potencia
-	System.out.println("La potencia es: "+numero1.calcularPot(numero1, numero2));
+	System.out.println("La potencia es: "+numero1.calcularPotencia(2));
 	}
 	
 

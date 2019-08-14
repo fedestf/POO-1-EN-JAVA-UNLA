@@ -19,55 +19,53 @@ public class Numero {
 		this.n = n;
 	}
 	
-	public int Sumar(Numero n) {
+	public int sumar(Numero n) {
+		// el this va solo cuando el valor que llega es el mismo nombre
+		return this.n+n.getN();
+	}
+	
+	public int sumar(Numero n,Numero n1) {
 
-		return (this.n+n.getN());
+		return n.getN()+n1.getN();
+	}
+	public int multiplicar (Numero n) {
+		return this.n*n.getN();
 	}
 	
-	public int Sumar2(Numero n,Numero n1) {
-
-		return (n.getN()+n1.getN());
-	}
-	public int Multiplicar (Numero n) {
-		return (this.n*n.getN());
+	public boolean esPar() {
+		return n%2==0;
 	}
 	
-	public boolean EsPar(Numero n) {
-		if(n.getN()%2==0){
-				 
-			return true;
+	public boolean esPrimo() {
+		boolean esPrimo=true;
+		int  aux=2;
+		while(aux<=n && esPrimo) {
+			esPrimo = n%aux!=0;
+			aux++;
 		}
-		else {
-			return false;
-		}
+		return esPrimo;	
 	}
-	
-	public boolean EsPrimo(Numero n) {
-		for(int i=2;i<n.getN();i++) {
-			if (n.getN()%i==0) {
-				
-				return false;
-			}
-		}
-		return true;	
-		}
 
 	public String ConvertirAString(Numero n) {
-		return (String.valueOf(n.getN()));
+		return String.valueOf(n.getN());
 	}
 	
 	public double ConvertirADouble(Numero n) {
-		 String z=Integer.toString(n.getN());
-		return (Double.parseDouble(z));
+		 return (Double.parseDouble(Integer.toString(n.getN())));
 	}
 	// preguntar o revisar porque no imprime el casteo a int
-	public double calcularPot(Numero n,Numero n1 ) {
-		String base=Integer.toString(n.getN());
-		String potencia=Integer.toString(n1.getN());
-		return (Math.pow(Double.parseDouble(base),(Double.parseDouble(potencia))));
-	}
+//	public double calcularPot(int exp) {
+	//	String base=Integer.toString(n.getN());
+		//String potencia=Integer.toString(n1.getN());
+		//int z;
+		//z=(int)(Math.pow(Double.parseDouble(base),(Double.parseDouble(potencia))));
+		//return z;
+	//	return (Math.pow(Double.parseDouble(base),(Double.parseDouble(potencia))));
+	//}
 	
-
+	public double calcularPotencia(int exp) {		
+		return ((int)(Math.pow(this.n,exp)));
+	}
 
 }
 
