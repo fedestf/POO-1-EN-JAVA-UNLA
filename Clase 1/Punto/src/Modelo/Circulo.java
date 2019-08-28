@@ -35,9 +35,10 @@ public class Circulo {
 		origen = nuevoOrigen;
 		origen.mover(desplazamientoX, desplazamientoY);
 	}
-	public void setRadio(Punto radio) {
-	 
 
+	public void setRadio(Punto radio) {
+		
+		
 	}
 
 	public boolean equals(Circulo c) {
