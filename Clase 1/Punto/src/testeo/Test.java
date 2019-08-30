@@ -40,6 +40,7 @@ public class Test {
 
 		System.out.println(circulo1.calcularDistancia(circulo2));
 		System.out.println(b.calcularDistancia(c));
+		System.out.println(a.toString());
 	}
 
 }
