@@ -1,14 +1,25 @@
 package test;
 
+import java.time.LocalDate;
+
+import java.util.Arrays;
+
 import modelo.*;
 
 public class Testeo {
 
 	public static void main(String[] args) {
 
-		int[] array1 = { 1, 2, 3 };
+		int[] array1 = { 4, 5, 6, 1, 2, 3 };
 
-		System.out.println();
+		Array array2 = new Array(array1);
+
+		System.out.println(array2.calcularPromedio());
+		System.out.println(array2.toString());
+		System.out.println(array2.traerElMayor());
+		System.out.println(array2.traerElMenor());
+		System.out.println(array2.traerFrecuencia(1));
+
 
 	}
 

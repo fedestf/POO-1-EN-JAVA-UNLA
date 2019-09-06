@@ -25,10 +25,10 @@ public class Array {
 	}
 
 	public int traerElMenor() {
-		int aux = 0;
-		for (int i = 0; i <= vector.length; i++) {
+		int aux = 999999999;
+		for (int i = 0; i < vector.length; i++) {
 
-			if (aux < vector[i]) {
+			if (vector[i] < aux) {
 				aux = vector[i];
 			}
 		}
@@ -37,10 +37,10 @@ public class Array {
 	}
 
 	public int traerElMayor() {
-		int aux = -999;
-		for (int i = 0; i <= vector.length; i++) {
+		int aux = 0;
+		for (int i = 0; i < vector.length; i++) {
 
-			if (aux > vector[i]) {
+			if (vector[i] > aux) {
 				aux = vector[i];
 			}
 		}
@@ -50,7 +50,7 @@ public class Array {
 
 	public double calcularPromedio() {
 		int suma = 0;
-		for (int i = 0; i <= vector.length; i++) {
+		for (int i = 0; i < vector.length; i++) {
 			suma = suma + vector[i];
 		}
 
@@ -70,4 +70,30 @@ public class Array {
 
 		return cont;
 	}
+	
+
+
+public int[] metodoBurbujaAsc( int [ ] num )
+    {
+         int i;
+         boolean flag = true;
+         int temp;
+ 
+         while ( flag )
+         {
+                flag = false;   
+                for( i=0;  i < num.length -1;  i++ )
+                {
+                       if ( num[ i ] > num[i+1] )  
+                       {
+                               temp = num[ i ];
+                               num[ i ] = num[ i+1 ];
+                               num[ i+1 ] = temp;
+                              flag = true; 
+                      } 
+                } 
+          } 
+         return num;
+    }
+
 }
