@@ -1,12 +1,14 @@
 package modelo;
 
 import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
 
 public class Persona {
 	private String nombre;
 	private String apellido;
 	private long dni;
-	LocalDate fechaNacimiento;
+	private LocalDate fechaNacimiento;
 
 	public Persona(String nombre, String apellido, long dni, LocalDate fechaNacimiento) {
 		super();
@@ -52,6 +54,36 @@ public class Persona {
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", fechaNacimiento="
 				+ fechaNacimiento + "]";
+	}
+
+	public int calcularEdad(LocalDate fecha) {
+		int edad = 0;
+		int mes = fechaNacimiento.getMonthValue();
+		int mes2 = fecha.getMonthValue();
+		int dia = fechaNacimiento.getDayOfMonth();
+		int dia2 = fecha.getDayOfMonth();
+
+		if (mes > mes2) {
+			edad = fecha.getYear() - fechaNacimiento.getYear();
+		}
+
+		if (mes < mes2) {
+			edad = (fecha.getYear() - fechaNacimiento.getYear()) - 1;
+		}
+
+		if (mes == mes2) {
+			if (dia < dia2) {
+				edad = (fecha.getYear() - fechaNacimiento.getYear()) - 1;
+			}
+		}
+
+		if (mes == mes2) {
+			if (dia >= dia2) {
+				edad = fecha.getYear() - fechaNacimiento.getYear();
+			}
+		}
+
+		return edad;
 	}
 
 }
