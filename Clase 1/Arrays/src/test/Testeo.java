@@ -1,7 +1,5 @@
 package test;
 
-import java.time.LocalDate;
-
 import java.util.Arrays;
 
 import modelo.*;
@@ -20,6 +18,9 @@ public class Testeo {
 		System.out.println(array2.traerElMenor());
 		System.out.println(array2.traerFrecuencia(1));
 
+		array2.mostrarMatriz();
+		array2.ordenarAsc();
+		array2.ordenarDes();
 
 	}
 

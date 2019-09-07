@@ -70,30 +70,64 @@ public class Array {
 
 		return cont;
 	}
-	
 
+	public void ordenarDes() {
+		System.out.println("Sin ordenar");
+		mostrarMatriz();
+		boolean existe = true;
+		int valorMenor = 0;
 
-public int[] metodoBurbujaAsc( int [ ] num )
-    {
-         int i;
-         boolean flag = true;
-         int temp;
- 
-         while ( flag )
-         {
-                flag = false;   
-                for( i=0;  i < num.length -1;  i++ )
-                {
-                       if ( num[ i ] > num[i+1] )  
-                       {
-                               temp = num[ i ];
-                               num[ i ] = num[ i+1 ];
-                               num[ i+1 ] = temp;
-                              flag = true; 
-                      } 
-                } 
-          } 
-         return num;
-    }
+		while (existe) {
+
+			existe = false;
+
+			for (int i = 0; i < vector.length - 1; i++) {
+
+				if (vector[i] < vector[i + 1]) {
+					valorMenor = vector[i + 1];
+					vector[i + 1] = vector[i];
+					vector[i] = valorMenor;
+					existe = true;
+
+				}
+			}
+		}
+
+		System.out.println("Ordenada");
+		mostrarMatriz();
+	}
+	public void ordenarAsc() {
+		System.out.println("Sin ordenar");
+		mostrarMatriz();
+		boolean existe = true;
+		int valorMenor = 0;
+
+		while (existe) {
+
+			existe = false;
+
+			for (int i = 0; i < vector.length - 1; i++) {
+
+				if (vector[i] > vector[i + 1]) {
+					valorMenor = vector[i + 1];
+					vector[i + 1] = vector[i];
+					vector[i] = valorMenor;
+					existe = true;
+
+				}
+			}
+		}
+
+		System.out.println("Ordenada");
+		mostrarMatriz();
+	}
+	public void mostrarMatriz() {
+		for (int i = 0; i < vector.length; i++) {
+
+			System.out.print("[" + vector[i] + "]");
+
+		}
+		System.out.println();
+	}
 
 }
