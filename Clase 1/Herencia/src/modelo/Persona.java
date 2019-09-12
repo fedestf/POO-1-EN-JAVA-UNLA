@@ -64,11 +64,11 @@ public class Persona {
 		int dia2 = fecha.getDayOfMonth();
 
 		if (mes > mes2) {
-			edad = fecha.getYear() - fechaNacimiento.getYear();
+			edad = fecha.getYear() - fechaNacimiento.getYear() - 1;
 		}
 
 		if (mes < mes2) {
-			edad = (fecha.getYear() - fechaNacimiento.getYear()) - 1;
+			edad = (fecha.getYear() - fechaNacimiento.getYear());
 		}
 
 		if (mes == mes2) {

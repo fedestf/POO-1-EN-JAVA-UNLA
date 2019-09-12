@@ -1170,3 +1170,55 @@ Caused by: java.lang.IndexOutOfBoundsException: Index: 33, Size: 33
 	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
 	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:121)
 	... 54 more
+!SESSION 2019-09-10 16:45:50.660 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-10 16:46:47.534
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-09-10 16:46:58.942
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-10 16:47:44.116
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Federico'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-09-10 17:23:37.429
+!MESSAGE No repository found at http://eclipse-fonts.googlecode.com/svn/trunk/FontsUpdate/.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-09-10 17:32:52.376
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-09-10 17:32:52.376
+!MESSAGE session context was:(profile=C__Users_Federico_Documents_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.core,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.doc,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.mylyn.ui,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.egit.ui,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit.archive,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jgit.ssh.apache,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.egit.mylyn,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit,5.4.2.201908231537-r
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-09-10 17:32:52.376
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jgit.ssh.apache,5.4.2.201908231537-r

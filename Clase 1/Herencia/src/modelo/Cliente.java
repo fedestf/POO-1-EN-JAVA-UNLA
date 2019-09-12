@@ -14,4 +14,26 @@ public class Cliente extends Persona {
 		this.limiteCredito = limiteCredito;
 	}
 
+	public String getCuit() {
+		return cuit;
+	}
+
+	public void setCuit(String cuit) {
+		this.cuit = cuit;
+	}
+
+	public float getLimiteCredito() {
+		return limiteCredito;
+	}
+
+	public void setLimiteCredito(float limiteCredito) {
+		this.limiteCredito = limiteCredito;
+	}
+
+	// asi esta bien o como ?
+	public boolean estadoCredito() {
+		int limite = 5000;
+		return limiteCredito > limite;
+	}
+
 }
